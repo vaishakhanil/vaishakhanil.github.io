@@ -1,0 +1,67 @@
+@font-face{
+    font-family: 'Calvier';
+    src: url(./assets/Calvier.ttf);
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 14px;
+    background: #FFF;
+}
+
+a:link{
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-family: 'Calvier', monospace;
+    font-size: 4vw;
+    letter-spacing: 0.5vw;
+}
+
+.socialIcons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 35vw;
+}
+img{
+    transform: scale(0.4);
+    transition: transform 0.5s ease;
+}
+
+img:hover{
+    transform: scale(0.5);
+}
+
+
+@media only screen and (max-width: 600px) {
+   .socialIcons{
+    justify-content: space-around;
+   }
+   img{
+       transform:scale(0.2);
+   }
+   img:hover{
+       transform: scale(0.3);
+   }
+  }
