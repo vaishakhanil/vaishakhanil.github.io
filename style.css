@@ -30,12 +30,14 @@ ul li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 99;
 }
 
 .title{
     font-family: 'Calvier', monospace;
     font-size: 4vw;
     letter-spacing: 0.5vw;
+    opacity: 0;
 }
 
 .socialIcons{
@@ -43,6 +45,7 @@ ul li{
     flex-direction: row;
     justify-content: space-between;
     width: 35vw;
+    opacity:0;
 }
 img{
     transform: scale(0.4);
@@ -53,15 +56,89 @@ img:hover{
     transform: scale(0.5);
 }
 
+.animated_animation.animated_slideFadeUp{
+    animation: slideFadeUp 0.5s ease 1s forwards;
+}
+.animated_animation.animated_slideFadeDown{
+    animation: slideFadeDown 0.5s ease 1.5s forwards;
+}
+
+
+@keyframes slideFadeDown{
+    from{
+        opacity:0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity:1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes slideFadeUp{
+    from{
+        opacity:0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform: translate(0);
+    }
+}
+
 
 @media only screen and (max-width: 600px) {
+    .title{
+        font-size: 12vw;
+        line-height: 2vh;
+    }
    .socialIcons{
+    width: 80%;
     justify-content: space-around;
    }
    img{
+       width: 20vw;
        transform:scale(0.2);
    }
    img:hover{
        transform: scale(0.3);
    }
   }
+
+
+
+
+  /*Loading Screen*/
+  .loadingScreen{
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      z-index: 1000;
+      background: #FFF;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .circle{
+      width: 40px;
+      height: 40px;
+      border: 10px solid blue;
+      border-radius: 50%;
+      animation: fadeIn 2s ease-in-out infinite;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity:0;
+        transform: scale(0);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(0);
+    }
+}

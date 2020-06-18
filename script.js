@@ -38,4 +38,11 @@ console.log(`%c
 ':,,,,,,,':  :  : : :  :  :WWWW'''
 BINGO
 
-`, "font-family:monospace")
+`, "font-family:monospace");
+
+
+const loader = document.getElementById('loader');
+
+window.addEventListener('load',()=>{
+    loader.style.display = 'none';
+})
