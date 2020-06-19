@@ -42,11 +42,9 @@ BINGO
 
 
 const loader = document.getElementById('loader');
-const title = document.getElementById('titleID');
 const icons = document.getElementById('iconsID');
 
 window.addEventListener('load',()=>{
     loader.style.display = 'none';
-    title.classList.add('animated_slideFadeUp');
     icons.classList.add('animated_slideFadeDown');
 })
