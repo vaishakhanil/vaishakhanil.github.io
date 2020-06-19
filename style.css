@@ -56,10 +56,10 @@ img:hover{
     transform: scale(0.5);
 }
 
-.animated_animation.animated_slideFadeUp{
+.animated_slideFadeUp{
     animation: slideFadeUp 0.5s ease 1s forwards;
 }
-.animated_animation.animated_slideFadeDown{
+.animated_slideFadeDown{
     animation: slideFadeDown 0.5s ease 1.5s forwards;
 }
 
