@@ -1,6 +1,6 @@
 @font-face {  
     font-family: 'Calvier';  
-    font-display: swap; 
+    font-display: swap;
     unicode-range: U+000-5FF; 
     src: local('Calvier'),      
     url('./assets/Calvier.woff') format('woff');
