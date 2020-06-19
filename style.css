@@ -1,7 +1,11 @@
-@font-face{
-    font-family: 'Calvier';
-    src: url(./assets/Calvier.ttf);
+@font-face {  
+    font-family: 'Calvier';  
+    font-display: swap; 
+    unicode-range: U+000-5FF; 
+    src: local('Calvier'),      
+    url('./assets/Calvier.woff') format('woff');
 }
+
 
 *{
     padding:0;
