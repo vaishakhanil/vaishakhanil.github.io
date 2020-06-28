@@ -46,7 +46,7 @@ ul li{
 
 .sub{
     font-family: 'Calvier', monospace;
-    font-size: 2vw;
+    font-size: 1vw;
     letter-spacing: 0.5vw;
     opacity: 0;
 }
@@ -103,6 +103,9 @@ img:hover{
     .title{
         font-size: 12vw;
         line-height: 2vh;
+    }
+    .sub{
+        font-size: 3vw;
     }
    .socialIcons{
     width: 80%;
