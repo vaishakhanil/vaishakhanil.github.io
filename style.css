@@ -44,6 +44,13 @@ ul li{
     opacity: 0;
 }
 
+.sub{
+    font-family: 'Calvier', monospace;
+    font-size: 2vw;
+    letter-spacing: 0.5vw;
+    opacity: 0;
+}
+
 .socialIcons{
     display:flex;
     flex-direction: row;
@@ -92,7 +99,7 @@ img:hover{
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .title{
         font-size: 12vw;
         line-height: 2vh;
