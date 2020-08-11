@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: vaishakhanil.github.io
-Token: d437d45fc0bf9afaa057a015c42de5ace2cea15402baf80eab627dc9a8a23c9b
